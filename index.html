@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Student Bootstrap Project</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      padding-top: 60px;
+    }
+    .carousel-inner img {
+      height: 400px;
+      object-fit: cover;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+
+  <div class="text-center mb-4">
+    <h1>My Bootstrap Assignment</h1>
+    <p>Assignment using Bootstrap 5</p>
+  </div>
+
+  <ul class="nav nav-tabs" id="myTab" role="tablist">
+    <li class="nav-item" role="presentation">
+      <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button">Home</button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button">Profile</button>
+    </li>
+  </ul>
+  <div class="tab-content p-3 border border-top-0" id="myTabContent">
+    <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel">
+      <p>This is the Home tab content.</p>
+    </div>
+    <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel">
+      <p>This is the Profile tab content.</p>
+    </div>
+  </div>
+
+  <div id="myCarousel" class="carousel slide my-5" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="IMAGES/c004ca6f-6923-42ab-a5de-f794d58c9c32.jpg" class="d-block w-100" alt="slide1">
+      </div>
+      <div class="carousel-item">
+        <img src="IMAGES/c004ca6f-6923-42ab-a5de-f794d58c9c32.jpg" class="d-block w-100" alt="slide2">
+      </div>
+      <div class="carousel-item">
+        <img src="IMAGES/c004ca6f-6923-42ab-a5de-f794d58c9c32.jpg" class="d-block w-100" alt="slide3">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+
+  <div class="accordion mb-4" id="accordionExample">
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+          What is this project about?
+        </button>
+      </h2>
+      <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          This project demonstrates a responsive website using Bootstrap
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+          Purpose of project
+        </button>
+      </h2>
+      <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          This project was created to demonstrate the use of modern web development techniques using Bootstrap
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <form>
+    <h4>Contact Form</h4>
+    <div class="mb-3">
+      <label for="name" class="form-label">Name <span data-bs-toggle="tooltip" title="Enter your full name.">🛈</span></label>
+      <input type="text" class="form-control" id="name" placeholder="Araba Yoyinsola">
+    </div>
+    <div class="mb-3">
+      <label for="email" class="form-label">Email address <span data-bs-toggle="tooltip" title="We'll never share your email.">🛈</span></label>
+      <input type="email" class="form-control" id="email" placeholder="arabaisaac7@gmail.com">
+    </div>
+    <div class="mb-3">
+      <label for="message" class="form-label">Message</label>
+      <textarea class="form-control" id="message" rows="3"></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary">Send</button>
+  </form>
+
+  <div class="row mt-5">
+    <div class="col-md-6">
+      <h5>Unordered List</h5>
+      <ul class="list-group">
+        <li class="list-group-item">GOAT</li>
+        <li class="list-group-item">COW</li>
+        <li class="list-group-item">SHEEP</li>
+      </ul>
+    </div>
+    <div class="col-md-6">
+      <h5>Ordered List</h5>
+      <ol class="list-group list-group-numbered">
+        <li class="list-group-item">GOAT</li>
+        <li class="list-group-item">COW</li>
+        <li class="list-group-item">SHEEP</li>
+      </ol>
+    </div>
+  </div>
+
+  <div class="text-center my-5">
+    <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#infoModal">
+      Explore
+    </button>
+  </div>
+
+  <div class="modal fade" id="infoModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">About</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          This is an example of a Bootstrap website.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  // Enable tooltips
+  const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
+  tooltipTriggerList.forEach(el => new bootstrap.Tooltip(el));
+</script>
+
+</body>
+</html>
